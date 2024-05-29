@@ -27,3 +27,7 @@ Tested on:
 ```
 ./rviz_intel.sh
 ```
+or
+```
+./rviz_nvidia.sh
+```
