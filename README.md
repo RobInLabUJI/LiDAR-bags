@@ -21,13 +21,22 @@ Tested on:
 ```
 ### Terminal 3
 ```
-./rstatic_transform.sh
+./rstatic_transform_laser.sh
 ```
 ### Terminal 4
+```
+./rstatic_transform_odom.sh
+```
+### Terminal 5
 ```
 ./rviz_intel.sh
 ```
 or
 ```
 ./rviz_nvidia.sh
+```
+### Terminal 6
+[LaserScan -> PointCloud](https://github.com/TransMisiones-Centauro/laserscan_to_pointcloud)
+```
+laserscan_to_pointcloud/run.sh
 ```
