@@ -1,0 +1,14 @@
+./rterminal.sh
+
+mkdir -p catkin_ws/src
+cd catkin_ws/src/
+apt update && apt install -y git python3-catkin-tools
+git clone https://github.com/PRBonn/kiss-icp
+cd kiss-icp/
+git checkout v0.3.0
+cd ../..
+rosdep install -r -y --from-paths /catkin_ws/src --ignore-src
+catkin build
+source devel/setup.bash
+roslaunch kiss_icp odometry_lidar2d.launch topic:=ambient_pointcloud
+
